@@ -8,7 +8,7 @@ mod = Blueprint('variables', __name__)
 
 logger = logging.getLogger('variables')
 
-@mod.route('/<string:variable>', methods=["GET"], endpoint='friend')
+@mod.route('/<string:variable>', methods=["GET"], endpoint='variables')
 def calculate_variable(variable):
     logger.info('request {}'.format(variable))
     res = "NO SUCH VARIABLE"
